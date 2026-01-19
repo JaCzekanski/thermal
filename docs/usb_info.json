@@ -1,0 +1,498 @@
+[
+  {
+    "name": "Camera",
+    "vendor_id": 13428,
+    "product_id": 17025,
+    "location_id": {
+      "bus": 0,
+      "tree_positions": [
+        1
+      ],
+      "number": 1
+    },
+    "serial_num": "202206223",
+    "manufacturer": "Raysentek Co.,Ltd",
+    "bcd_device": "2.00",
+    "bcd_usb": "2.00",
+    "device_speed": "480.0 Mb/s",
+    "class": "miscellaneous",
+    "sub_class": 2,
+    "protocol": 1,
+    "extra": {
+      "max_packet_size": 64,
+      "string_indexes": [
+        2,
+        1,
+        3
+      ],
+      "configurations": [
+        {
+          "name": "Configuration",
+          "string_index": 4,
+          "number": 1,
+          "interfaces": [
+            {
+              "name": "Camera",
+              "string_index": 2,
+              "number": 0,
+              "path": "0-1:1.0",
+              "class": "video",
+              "sub_class": 1,
+              "protocol": 0,
+              "alt_setting": 0,
+              "driver": null,
+              "syspath": null,
+              "endpoints": [
+                {
+                  "length": 7,
+                  "address": {
+                    "address": 131,
+                    "number": 3,
+                    "direction": "In"
+                  },
+                  "transfer_type": "Interrupt",
+                  "sync_type": "None",
+                  "usage_type": "Data",
+                  "max_packet_size": 64,
+                  "interval": 6,
+                  "extra": [
+                    {
+                      "endpoint": {
+                        "video": [
+                          {
+                            "length": 5,
+                            "descriptor_type": 37,
+                            "descriptor_subtype": {
+                              "control": "output-terminal"
+                            },
+                            "interface": {
+                              "Invalid": [
+                                64,
+                                0
+                              ]
+                            }
+                          },
+                          0
+                        ]
+                      }
+                    }
+                  ],
+                  "endpoint_path": {
+                    "device_path": {
+                      "port_path": {
+                        "bus": 0,
+                        "ports": [
+                          1
+                        ]
+                      },
+                      "config": 1,
+                      "interface": 0,
+                      "alt_setting": 0
+                    },
+                    "endpoint": 131
+                  }
+                }
+              ],
+              "length": 9,
+              "extra": [
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 13,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "control": "header"
+                        },
+                        "interface": {
+                          "Header": {
+                            "version": [
+                              1,
+                              1,
+                              0
+                            ],
+                            "total_length": 53,
+                            "clock_frequency": 15000000,
+                            "collection_bytes": 1,
+                            "interfaces": [
+                              1
+                            ]
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 18,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "control": "input-terminal"
+                        },
+                        "interface": {
+                          "InputTerminal": {
+                            "terminal_id": 1,
+                            "terminal_type": 513,
+                            "associated_terminal": 0,
+                            "terminal_index": 0,
+                            "terminal": null,
+                            "extra": {
+                              "objective_focal_length_min": 0,
+                              "objective_focal_length_max": 0,
+                              "ocular_focal_length": 0,
+                              "control_size": 3,
+                              "controls": 0
+                            }
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 13,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "control": "processing-unit"
+                        },
+                        "interface": {
+                          "ProcessingUnit": {
+                            "unit_id": 2,
+                            "source_id": 1,
+                            "max_multiplier": 0,
+                            "control_size": 3,
+                            "controls": 0,
+                            "processing_index": 0,
+                            "processing": null,
+                            "video_standards": 0
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 9,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "control": "output-terminal"
+                        },
+                        "interface": {
+                          "OutputTerminal": {
+                            "terminal_id": 3,
+                            "terminal_type": 257,
+                            "assoc_terminal": 0,
+                            "source_id": 2,
+                            "terminal_index": 0,
+                            "terminal": null
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                }
+              ],
+              "device_path": {
+                "port_path": {
+                  "bus": 0,
+                  "ports": [
+                    1
+                  ]
+                },
+                "config": 1,
+                "interface": 0,
+                "alt_setting": 0
+              }
+            },
+            {
+              "name": null,
+              "string_index": 0,
+              "number": 1,
+              "path": "0-1:1.1",
+              "class": "video",
+              "sub_class": 2,
+              "protocol": 0,
+              "alt_setting": 0,
+              "driver": null,
+              "syspath": null,
+              "endpoints": [],
+              "length": 9,
+              "extra": [
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 14,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "streaming": "input-header"
+                        },
+                        "interface": {
+                          "InputHeader": {
+                            "num_formats": 1,
+                            "total_length": 107,
+                            "endpoint_address": {
+                              "address": 129,
+                              "number": 1,
+                              "direction": "In"
+                            },
+                            "info": 0,
+                            "terminal_link": 3,
+                            "still_capture_method": 0,
+                            "trigger_support": 0,
+                            "trigger_usage": 0,
+                            "control_size": 1,
+                            "controls": [
+                              0
+                            ]
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 27,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "streaming": "format-uncompressed"
+                        },
+                        "interface": {
+                          "FormatUncompressed": {
+                            "format_index": 1,
+                            "num_frame_descriptors": 2,
+                            "guid_format": "32595559-0000-0010-8000-00aa00389b71",
+                            "bits_per_pixel": 16,
+                            "default_frame_index": 1,
+                            "aspect_ratio_x": 0,
+                            "aspect_ratio_y": 0,
+                            "interlace_flags": 0,
+                            "copy_protect": 0,
+                            "variable_size": null
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 30,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "streaming": "frame-uncompressed"
+                        },
+                        "interface": {
+                          "FrameUncompressed": {
+                            "common": {
+                              "frame_index": 1,
+                              "capabilities": 0,
+                              "width": 256,
+                              "height": 194,
+                              "min_bit_rate": 11919360,
+                              "max_bit_rate": 23838720
+                            },
+                            "max_video_frame_buffer_size": 99328,
+                            "default_frame_interval": 400000,
+                            "frame_interval_type": 1,
+                            "frame_intervals": [
+                              400000
+                            ]
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 30,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "streaming": "frame-uncompressed"
+                        },
+                        "interface": {
+                          "FrameUncompressed": {
+                            "common": {
+                              "frame_index": 2,
+                              "capabilities": 0,
+                              "width": 256,
+                              "height": 386,
+                              "min_bit_rate": 23715840,
+                              "max_bit_rate": 47431680
+                            },
+                            "max_video_frame_buffer_size": 197632,
+                            "default_frame_interval": 400000,
+                            "frame_interval_type": 1,
+                            "frame_intervals": [
+                              400000
+                            ]
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                },
+                {
+                  "interface": {
+                    "video": [
+                      {
+                        "length": 6,
+                        "descriptor_type": 36,
+                        "descriptor_subtype": {
+                          "streaming": "color-format"
+                        },
+                        "interface": {
+                          "ColorFormat": {
+                            "color_primaries": 1,
+                            "transfer_characteristics": 1,
+                            "matrix_coefficients": 4
+                          }
+                        }
+                      },
+                      0
+                    ]
+                  }
+                }
+              ],
+              "device_path": {
+                "port_path": {
+                  "bus": 0,
+                  "ports": [
+                    1
+                  ]
+                },
+                "config": 1,
+                "interface": 1,
+                "alt_setting": 0
+              }
+            },
+            {
+              "name": null,
+              "string_index": 0,
+              "number": 1,
+              "path": "0-1:1.1",
+              "class": "video",
+              "sub_class": 2,
+              "protocol": 0,
+              "alt_setting": 1,
+              "driver": null,
+              "syspath": null,
+              "endpoints": [
+                {
+                  "length": 7,
+                  "address": {
+                    "address": 129,
+                    "number": 1,
+                    "direction": "In"
+                  },
+                  "transfer_type": "Isochronous",
+                  "sync_type": "Asynchronous",
+                  "usage_type": "Data",
+                  "max_packet_size": 1024,
+                  "interval": 1,
+                  "extra": [],
+                  "endpoint_path": {
+                    "device_path": {
+                      "port_path": {
+                        "bus": 0,
+                        "ports": [
+                          1
+                        ]
+                      },
+                      "config": 1,
+                      "interface": 1,
+                      "alt_setting": 1
+                    },
+                    "endpoint": 129
+                  }
+                }
+              ],
+              "length": 9,
+              "extra": [],
+              "device_path": {
+                "port_path": {
+                  "bus": 0,
+                  "ports": [
+                    1
+                  ]
+                },
+                "config": 1,
+                "interface": 1,
+                "alt_setting": 1
+              }
+            }
+          ],
+          "attributes": [
+            "SelfPowered"
+          ],
+          "max_power": {
+            "value": 100,
+            "unit": "mA",
+            "description": null
+          },
+          "length": 223,
+          "total_length": 223,
+          "extra": [
+            {
+              "interface-association": {
+                "length": 8,
+                "descriptor_type": 11,
+                "first_interface": 0,
+                "interface_count": 2,
+                "function_class": 14,
+                "function_sub_class": 3,
+                "function_protocol": 0,
+                "function_string_index": 2,
+                "function_string": "Camera"
+              }
+            }
+          ]
+        }
+      ],
+      "status": 0,
+      "qualifier": {
+        "length": 10,
+        "descriptor_type": 6,
+        "version": [
+          2,
+          0,
+          0
+        ],
+        "device_class": "miscellaneous",
+        "device_subclass": 2,
+        "device_protocol": 1,
+        "max_packet_size": 64,
+        "num_configurations": 0
+      },
+      "negotiated_speed": null
+    },
+    "last_event": {
+      "profiled": "2026-01-15T12:43:26.294111+01:00"
+    }
+  }
+]
