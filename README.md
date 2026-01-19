@@ -15,6 +15,9 @@ Program weights 80kB (36kB after `strip`), uses AppKit for UI and AVFoundation f
 
 It autoranges the temperature palette by default, measures coldest/hottest, center and user clickable point, can freeze frame and export current image as PNG.
 
+## Download
+[Here](http://github.com/JaCzekanski/thermal/releases/latest/download/thermal)
+
 ## Build
 
 ```
